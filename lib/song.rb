@@ -17,7 +17,7 @@ class Song
   # def self.all
   #   @@songs
   # end
-  # 
+  #
   # def self.reset_all
   #   self.all.clear
   # end
@@ -33,4 +33,4 @@ class Song
   def to_param
     name.downcase.gsub(' ', '-')
   end
-end 
+end

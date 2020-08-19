@@ -14,16 +14,18 @@ class Song
     @@songs.detect{|a| a.name == name}
   end
 
-  # def self.all
-  #   @@songs
-  # end
-  #
-  # def self.reset_all
-  #   self.all.clear
-  # end
+  def self.all
+    @@songs
+  end
+
+  def self.reset_all
+    extend
+    # self.all.clear
+  end
 
   def self.count
-    self.all.count
+    extend
+    # self.all.count
   end
 
   def artist=(artist)
